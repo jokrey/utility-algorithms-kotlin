@@ -9,5 +9,6 @@ Some of the algorithms here are implementation of protocols that exist in other 
 As this is Kotlin, the algorithms are also usable with java applications.
 
 
+
 How to use:
   For now just copy the whole package into your Project.

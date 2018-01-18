@@ -1,6 +1,6 @@
-package utilities
+package hh.jokrey.utilities
 
-import utilities.bitsandbytes.BitHelper
+import hh.jokrey.utilities.bitsandbytes.BitHelper
 import java.util.*
 import kotlin.math.max
 
@@ -93,7 +93,7 @@ fun bwimage_decode(array: ByteArray):Array<Array<Boolean>> {
         wh_bytecount++
     }
 
-    return bwimage_decode(width, height, 2*wh_bytecount, array)
+    return bwimage_decode(width, height, 2 * wh_bytecount, array)
 }
 
 private fun bwimage_decode(width:Int, height:Int, start_index:Int, array: ByteArray):Array<Array<Boolean>> {

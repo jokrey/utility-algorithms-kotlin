@@ -1,6 +1,6 @@
-package hh.jokrey.utilities
+package jokrey.utilities
 
-import hh.jokrey.utilities.bitsandbytes.BitHelper
+import jokrey.utilities.bitsandbytes.BitHelper
 import java.util.*
 import kotlin.math.max
 

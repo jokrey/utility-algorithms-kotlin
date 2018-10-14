@@ -38,7 +38,9 @@ fun tests() {
     println(Math.ceil((10*10) /8.0).toInt())
 }
 
-
+/**
+ * Encodes the image in param raster into a single, storable ByteArray.
+ */
 fun bwimage_encode(raster:Array<Array<Boolean>>): ByteArray {
     val width = raster.size
     val height = raster[0].size
@@ -73,6 +75,9 @@ fun bwimage_encode(raster:Array<Array<Boolean>>): ByteArray {
     return result
 }
 
+/**
+ * Decodes a with bwimage_encode encoded ByteArray back into the 2d boolean array representing the black and white image.
+ */
 fun bwimage_decode(array: ByteArray):Array<Array<Boolean>> {
     var wh_bytecount = 0
     var width = 0

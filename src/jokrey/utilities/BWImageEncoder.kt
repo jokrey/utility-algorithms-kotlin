@@ -87,7 +87,7 @@ fun bwimage_decode(array: ByteArray):Array<Array<Boolean>> {
         val new_width = BitHelper.getIntFrom(array.sliceArray(0 until (wh_bytecount+1))).toInt()
         val new_height = BitHelper.getIntFrom(array.sliceArray((wh_bytecount+1) until 2*(wh_bytecount+1))).toInt()
 
-        if((new_width<=0 || new_height<=0) && width!=0 && height!=0 ) break  // indicates a definite wrong read in BitHelper.getIntFrom. Additionally it might confuse the next if clause
+        if((new_width<=0 || new_height<=0) && width!=0 && height!=0 ) break  // indicates a definite wrong read in BitHelper.getIntFrom. Additionally, it might confuse the next if clause
 
         if(width * height <= stored_bits_count && stored_bits_count < new_width*new_height)
             break
